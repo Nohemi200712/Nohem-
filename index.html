@@ -1,53 +1,26 @@
 <!DOCTYPE html>
-
-<!-- Define que el documento es de tipo HTML5 -->
-
 <html lang="es">
-
-<!-- Indica que el documento está en español-->
-
 <head>
-
-    <link rel="stylesheet" href="estilos.css">
-
-    <!-- Vincula la hoja de estilos CSS externa para aplicar estilos a la página -->
-
     <meta charset="UTF-8">
-
-    <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Configura la escala y el ancho de la vista para que sea responsive en dispositivos móviles -->
-
-    <title>Mi Primera Página Web</title>
-
-    <!-- Define el título de la página, que se muestra en la pestaña del navegador -->
-
+    <title>Examen de JavaScript</title>
+    <link rel="stylesheet" href="ejemplo.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1>Ejercicio de JavaScript</h1>
 
-    <!-- Contiene el contenido visible de la página web-->
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        <button onclick="saludar()">Saludar</button>
+        <br>
+        <label for="numero">Ingresa un número:</label>
+        <input type="number" id="numero" placeholder="Escribe un número">
+        <button onclick="calcularCuadrado()">Calcular Cuadrado</button>
 
-    
+        <p id="resultado"></p>
+    </div>
 
-   
-
-    <h1>Bienvenido a Mi Página Web</h1>
-
-    <!-- Encabezado de nivel 1, generalmente usado para el título principal de la página -->
-
-    <p>Nohemí Gerónimo Chablé.</p>
-
-    <!-- Define un párrafo de texto -->
-
-    <a href="https://www.google.com">Ir a Google</a>
-
-    <!-- Crea un enlace que redirige a la página de Google -->
-
+    <script src="ejemplo.js"></script>
 </body>
-
 </html>
-
-<!-- Marca el fin del documento HTML-->
